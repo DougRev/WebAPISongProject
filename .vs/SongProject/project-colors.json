@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cfe2f2ea-af34-4a77-83f9-7d7ba87f1d83": {
+      "ProjectGuid": "cfe2f2ea-af34-4a77-83f9-7d7ba87f1d83",
+      "DisplayName": "SongProjectWebAPI",
+      "ColorIndex": 0
+    },
+    "3ba4ab2a-51fb-4278-bde3-c77b833e3cc8": {
+      "ProjectGuid": "3ba4ab2a-51fb-4278-bde3-c77b833e3cc8",
+      "DisplayName": "SongProject.Data",
+      "ColorIndex": 1
+    },
+    "269e8651-5122-40d4-adcd-11f09bc28dcc": {
+      "ProjectGuid": "269e8651-5122-40d4-adcd-11f09bc28dcc",
+      "DisplayName": "SongProject.Models",
+      "ColorIndex": 2
+    },
+    "2d2c9d97-9b66-484a-8bde-7151af0c5339": {
+      "ProjectGuid": "2d2c9d97-9b66-484a-8bde-7151af0c5339",
+      "DisplayName": "SongProject.Services",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
