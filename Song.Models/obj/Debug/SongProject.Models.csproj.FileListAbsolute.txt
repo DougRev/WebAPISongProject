@@ -1,0 +1,16 @@
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Song.Models.dll.config
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Song.Models.dll
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Song.Models.pdb
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\EntityFramework.dll
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\EntityFramework.xml
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\SongProject.Models.csproj.AssemblyReference.cache
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\SongProject.Models.csproj.CoreCompileInputs.cache
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\SongProject.Models.csproj.CopyComplete
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\Song.Models.dll
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\Song.Models.pdb

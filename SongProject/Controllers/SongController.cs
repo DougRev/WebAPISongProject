@@ -21,6 +21,7 @@ namespace SongProject.Controllers
             return songService;
         }
 
+        [HttpGet]
         public IHttpActionResult Get()
         {
             SongService songService = CreateSongService();
@@ -28,7 +29,15 @@ namespace SongProject.Controllers
             return Ok(song);
         }
 
-        public IHttpActionResult Post(AddSong song)
+        [HttpGet]
+        public IHttpActionResult Get(int id)
+        {
+            SongService songService = CreateSongService();
+            var song = songService.GetSongById(id);
+            return Ok(song);
+        }
+        [HttpPost]
+        public IHttpActionResult CreateSong(AddSong song)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -38,7 +47,33 @@ namespace SongProject.Controllers
             if (!service.CreateSong(song))
                 return InternalServerError();
 
+            return Ok("It worked");
+        }
+
+        [HttpPut]
+        public IHttpActionResult UpdateSong(SongEdit song)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = CreateSongService();
+
+            if (!service.UpdateSong(song))
+                return InternalServerError();
+
             return Ok();
         }
+
+        [HttpDelete]
+        public IHttpActionResult DeleteSong(int id)
+        {
+            var service = CreateSongService();
+
+            if (!service.DeleteSong(id))
+                return InternalServerError();
+
+            return Ok();
+        }
+
     }
 }

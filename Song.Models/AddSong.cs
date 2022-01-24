@@ -14,7 +14,7 @@ namespace Song.Models
         public string Title { get; set; }
         [Required]
         [MaxLength(100, ErrorMessage = "Artist name must be shorter")]
-        public string Artitst { get; set; }
+        public string Artist { get; set; }
         [Required]
         [MaxLength(50, ErrorMessage = "Genre name must be shorter")]
         public string Genre { get; set; }

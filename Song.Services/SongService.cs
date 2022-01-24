@@ -11,21 +11,21 @@ namespace SongProject.Services
     public class SongService
     {
         private readonly Guid _userId;
-        public SongService (Guid userId)
+        public SongService(Guid userId)
         {
             _userId = userId;
         }
-        
+
         public bool CreateSong(AddSong model)
         {
             var entity =
                 new Songy()
-            {
-                OwnerId = _userId,
-                Title = model.Title,
-                Artist = model.Artitst,
-                Genre = model.Genre
-            };
+                {
+                    OwnerId = _userId,
+                    Title = model.Title,
+                    Artist = model.Artist,
+                    Genre = model.Genre
+                };
 
             using (var ctx = new ApplicationDbContext())
             {
@@ -34,6 +34,25 @@ namespace SongProject.Services
             }
         }
 
+        public SongDetail GetSongById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Songs
+                    .Single(e => e.SongId == id && e.OwnerId == _userId);
+                    return
+                    new SongDetail
+                    {
+                        SongId = entity.SongId,
+                        Title = entity.Title,
+                        Artist = entity.Artist,
+                        CreatedUtc = entity.CreatedUtc,
+                        ModifiedUtc = entity.ModifiedUtc
+                    };
+            }
+        }
         public IEnumerable<SongList> GetSongs()
         {
             using (var ctx = new ApplicationDbContext())
@@ -48,11 +67,43 @@ namespace SongProject.Services
                         {
                             SongId = e.SongId,
                             Title = e.Title,
-                            CreatedUtc = e.CreatedUtc 
+                            CreatedUtc = e.CreatedUtc
                         }
-                  );
-            return query.ToArray();
+            );
+
+
+                return query.ToArray();
             }
+
         }
+            public bool UpdateSong(SongEdit model)
+        {
+            using(var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Songs
+                    .Single(e => e.SongId == model.SongId);
+                entity.Title = model.Title;
+                entity.Artist = model.Artist;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+
+                return ctx.SaveChanges() == 1;
+            }
+
+        }
+            public bool DeleteSong(int songId)
+            {
+                using (var ctx =new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Songs
+                    .Single(e => e.SongId == songId && e.OwnerId == _userId);
+
+                ctx.Songs.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+            }
     }
 }
