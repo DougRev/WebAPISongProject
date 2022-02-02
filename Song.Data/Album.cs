@@ -13,8 +13,10 @@ namespace SongProject.Data
             [Key]
             public int AlbumId { get; set; }
             public Guid OwnerId { get; set; }
+
             [Required]
             public string AlbumName { get; set; }
+
             [Required]
             [ForeignKey(nameof(Artist))]
             public int ArtistId { get; set; }

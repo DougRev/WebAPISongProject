@@ -14,6 +14,7 @@ namespace Song.Models.Album
         
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
+
         [Display(Name = "Modified")]
         public DateTimeOffset ModifiedUtc { get; set; }
     }

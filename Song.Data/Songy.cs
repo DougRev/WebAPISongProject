@@ -13,6 +13,7 @@ namespace SongProject.Data
         [Key]
         public int SongId { get; set; }
         public Guid OwnerId { get; set; }
+
         [Required]
         public string SongName { get; set; }
 

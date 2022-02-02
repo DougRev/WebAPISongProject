@@ -12,8 +12,10 @@ namespace Song.Models
         public int SongId { get; set; }
         public string SongName { get; set; }
         public string ArtistId { get; set; }
+
         [Display(Name="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
+
         [Display(Name = "Modified")]
         public DateTimeOffset ModifiedUtc { get; set; }
     }
