@@ -88,11 +88,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Album.cs" />
+    <Compile Include="Album_Song.cs" />
     <Compile Include="Artist.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202201240111439_ADD_DBSET.cs" />
-    <Compile Include="Migrations\202201240111439_ADD_DBSET.designer.cs">
-      <DependentUpon>202201240111439_ADD_DBSET.cs</DependentUpon>
+    <Compile Include="Migrations\202202022103255_AddFK.cs" />
+    <Compile Include="Migrations\202202022103255_AddFK.designer.cs">
+      <DependentUpon>202202022103255_AddFK.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,8 +104,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202201240111439_ADD_DBSET.resx">
-      <DependentUpon>202201240111439_ADD_DBSET.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202022103255_AddFK.resx">
+      <DependentUpon>202202022103255_AddFK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

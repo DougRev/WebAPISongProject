@@ -46,7 +46,7 @@ namespace SongProjectWebAPI.Controllers
                 if (!service.CreateArtist(artist))
                     return InternalServerError();
 
-                return Ok("Song Added");
+                return Ok("Artist has been added");
             }
 
             [HttpPut]

@@ -14,3 +14,6 @@ C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebAp
 C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\SongProject.Models.csproj.CopyComplete
 C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\Song.Models.dll
 C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\obj\Debug\Song.Models.pdb
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Song.Data.dll
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Song.Data.pdb
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Models\bin\Debug\Song.Data.dll.config

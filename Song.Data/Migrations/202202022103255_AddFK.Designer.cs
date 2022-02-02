@@ -7,13 +7,13 @@ namespace Song.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class ADD_DBSET : IMigrationMetadata
+    public sealed partial class AddFK : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ADD_DBSET));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddFK));
         
         string IMigrationMetadata.Id
         {
-            get { return "202201240111439_ADD_DBSET"; }
+            get { return "202202022103255_AddFK"; }
         }
         
         string IMigrationMetadata.Source

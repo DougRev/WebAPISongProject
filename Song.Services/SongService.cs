@@ -1,5 +1,6 @@
 ﻿using Song.Data;
 using Song.Models;
+using SongProject.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,6 @@ namespace SongProject.Services
                 {
                     OwnerId = _userId,
                     SongName = model.SongName,
-                    ArtistId = model.ArtistId,
                     Genre = model.Genre
                 };
 
@@ -46,8 +46,7 @@ namespace SongProject.Services
                     new SongDetail
                     {
                         SongId = entity.SongId,
-                        Title = entity.SongName,
-                        ArtistId = entity.ArtistId,
+                        SongName = entity.SongName,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
                     };
@@ -66,7 +65,8 @@ namespace SongProject.Services
                         new SongList
                         {
                             SongId = e.SongId,
-                            Title = e.SongName,
+                            ArtistId = e.ArtistId,
+                            SongName = e.SongName,
                             CreatedUtc = e.CreatedUtc
                         }
             );
@@ -84,7 +84,6 @@ namespace SongProject.Services
                     .Songs
                     .Single(e => e.SongId == model.SongId);
                 entity.SongName = model.SongName;
-                entity.ArtistId = model.ArtistId;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;

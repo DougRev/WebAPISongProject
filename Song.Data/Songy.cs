@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Song.Data
+namespace SongProject.Data
 {
     public class Songy
     {
@@ -15,9 +15,9 @@ namespace Song.Data
         public Guid OwnerId { get; set; }
         [Required]
         public string SongName { get; set; }
-        [Required]
+
         [ForeignKey("Artist")]
-        public string ArtistId { get; set; }
+        public int ArtistId { get; set; }
         public string Genre { get; set; }
         public string RunTime { get; set; }
         public string Lyrics { get; set; }

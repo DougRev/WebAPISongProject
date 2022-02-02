@@ -6,13 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Song.Data
+namespace SongProject.Data
 {
     public class Artist
     {
         [Key]
         public int ArtistId { get; set; }
         public Guid OwnerId { get; set; }
+
         [Required]
         public string ArtistName { get; set; }
 

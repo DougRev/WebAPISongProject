@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Song.Data
+namespace SongProject.Data
 {
     public class Album
     {
@@ -17,7 +17,7 @@ namespace Song.Data
             public string AlbumName { get; set; }
             [Required]
             [ForeignKey("Artist")]
-            public string ArtistId { get; set; }
+            public int ArtistId { get; set; }
             public DateTimeOffset CreatedUtc { get; set; }
             public DateTimeOffset ModifiedUtc { get; set; }
             public virtual Artist Artist { get; set; }

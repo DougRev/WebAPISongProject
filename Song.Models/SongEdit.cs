@@ -12,7 +12,7 @@ namespace Song.Models
         public int SongId { get; set; }
         public string SongName { get; set; }
 
-        [ForeignKey("Artist")]
+        
         public string ArtistId { get; set; }
     }
 }
