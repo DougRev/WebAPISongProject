@@ -47,7 +47,7 @@ namespace SongProject.Controllers
             if (!service.CreateSong(song))
                 return InternalServerError();
 
-            return Ok("It worked");
+            return Ok("Song Added");
         }
 
         [HttpPut]
@@ -72,7 +72,7 @@ namespace SongProject.Controllers
             if (!service.DeleteSong(id))
                 return InternalServerError();
 
-            return Ok();
+            return Ok("Song Deleted");
         }
 
     }

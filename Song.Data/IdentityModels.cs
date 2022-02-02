@@ -33,14 +33,16 @@ namespace Song.Data
             return new ApplicationDbContext();
         }
 
-        public DbSet<Songy> Songs { get; set; }
+        public DbSet <Songy> Songs { get; set; }
+        public DbSet <Artist> Artists { get; set; }
+        public DbSet <Album> Albums { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
                 .Conventions
                 .Remove<PluralizingTableNameConvention>();
-
+            
             modelBuilder
                 .Configurations
                 .Add(new IdentityUserLoginConfiguration())

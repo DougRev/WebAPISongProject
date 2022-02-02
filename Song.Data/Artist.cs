@@ -8,23 +8,15 @@ using System.Threading.Tasks;
 
 namespace Song.Data
 {
-    public class Songy
+    public class Artist
     {
         [Key]
-        public int SongId { get; set; }
+        public int ArtistId { get; set; }
         public Guid OwnerId { get; set; }
         [Required]
-        public string SongName { get; set; }
-        [Required]
-        [ForeignKey("Artist")]
-        public string ArtistId { get; set; }
-        public string Genre { get; set; }
-        public string RunTime { get; set; }
-        public string Lyrics { get; set; }
-        [Required]
+        public string ArtistName { get; set; }
+
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset ModifiedUtc { get; set; }
-        public virtual Artist Artist { get; set; }
-
     }
 }

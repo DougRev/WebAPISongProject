@@ -5,16 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Song.Models
+namespace Song.Models.Album
 {
-    public class SongDetail
+    public class AlbumCreate
     {
-        public int SongId { get; set; }
-        public string Title { get; set; }
-        public string ArtistId { get; set; }
-        [Display(Name="Created")]
+        [Key]
+        public int AlbumId { get; set; }
+        [Required]
+        public string AlbumName { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
-        [Display(Name = "Modified")]
         public DateTimeOffset ModifiedUtc { get; set; }
     }
 }

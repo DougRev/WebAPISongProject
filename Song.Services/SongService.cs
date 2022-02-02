@@ -22,8 +22,8 @@ namespace SongProject.Services
                 new Songy()
                 {
                     OwnerId = _userId,
-                    Title = model.Title,
-                    Artist = model.Artist,
+                    SongName = model.SongName,
+                    ArtistId = model.ArtistId,
                     Genre = model.Genre
                 };
 
@@ -46,8 +46,8 @@ namespace SongProject.Services
                     new SongDetail
                     {
                         SongId = entity.SongId,
-                        Title = entity.Title,
-                        Artist = entity.Artist,
+                        Title = entity.SongName,
+                        ArtistId = entity.ArtistId,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
                     };
@@ -66,7 +66,7 @@ namespace SongProject.Services
                         new SongList
                         {
                             SongId = e.SongId,
-                            Title = e.Title,
+                            Title = e.SongName,
                             CreatedUtc = e.CreatedUtc
                         }
             );
@@ -83,8 +83,8 @@ namespace SongProject.Services
                 var entity = ctx
                     .Songs
                     .Single(e => e.SongId == model.SongId);
-                entity.Title = model.Title;
-                entity.Artist = model.Artist;
+                entity.SongName = model.SongName;
+                entity.ArtistId = model.ArtistId;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;

@@ -87,6 +87,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album.cs" />
+    <Compile Include="Artist.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202201240111439_ADD_DBSET.cs" />
     <Compile Include="Migrations\202201240111439_ADD_DBSET.designer.cs">

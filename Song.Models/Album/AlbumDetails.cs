@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Song.Models
+namespace Song.Models.Album
 {
-    public class SongDetail
+    public class AlbumDetails
     {
-        public int SongId { get; set; }
-        public string Title { get; set; }
-        public string ArtistId { get; set; }
-        [Display(Name="Created")]
+        public int AlbumId { get; set; }
+        public string AlbumName { get; set; }
+
+        [ForeignKey("Artist")]
+        public int ArtistId { get; set; }
+        [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
         [Display(Name = "Modified")]
         public DateTimeOffset ModifiedUtc { get; set; }
+        
     }
 }
