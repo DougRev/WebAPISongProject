@@ -24,7 +24,8 @@ namespace SongProject.Services
                 {
                     OwnerId = _userId,
                     SongName = model.SongName,
-                    Genre = model.Genre
+                    Genre = model.Genre,
+                    CreatedUtc = DateTime.Now,
                 };
 
             using (var ctx = new ApplicationDbContext())

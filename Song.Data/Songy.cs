@@ -16,15 +16,15 @@ namespace SongProject.Data
         [Required]
         public string SongName { get; set; }
 
-        [ForeignKey("Artist")]
+        [ForeignKey(nameof(Artist))]
         public int ArtistId { get; set; }
+        public virtual Artist Artist { get; set; }
         public string Genre { get; set; }
         public string RunTime { get; set; }
         public string Lyrics { get; set; }
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset ModifiedUtc { get; set; }
-        public virtual Artist Artist { get; set; }
 
     }
 }

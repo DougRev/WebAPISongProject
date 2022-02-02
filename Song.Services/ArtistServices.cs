@@ -24,6 +24,7 @@ namespace Song.Services
                 {
                     OwnerId = _userId,
                     ArtistName = model.ArtistName,
+                    CreatedUtc = DateTime.UtcNow,
                     
                 };
 

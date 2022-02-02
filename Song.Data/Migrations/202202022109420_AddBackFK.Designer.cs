@@ -7,13 +7,13 @@ namespace Song.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AddFK : IMigrationMetadata
+    public sealed partial class AddBackFK : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddFK));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddBackFK));
         
         string IMigrationMetadata.Id
         {
-            get { return "202202022103255_AddFK"; }
+            get { return "202202022109420_AddBackFK"; }
         }
         
         string IMigrationMetadata.Source

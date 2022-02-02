@@ -33,5 +33,5 @@ C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebAp
 C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Data\bin\Debug\System.Web.Http.xml
 C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Data\bin\Debug\System.Web.Http.Owin.xml
 C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Data\obj\Debug\SongProject.Data.csproj.CopyComplete
-C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Data\obj\Debug\Song.Data.Migrations.AddFK.resources
+C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Data\obj\Debug\Song.Data.Migrations.AddBackFK.resources
 C:\Users\DJ Revell\source\repos\PersonalCodingProjects\ASP.Net\FirstEffort\WebApiSongs\SongProject\Song.Data\obj\Debug\SongProject.Data.csproj.GenerateResource.cache

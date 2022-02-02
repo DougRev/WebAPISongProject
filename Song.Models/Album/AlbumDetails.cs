@@ -13,7 +13,6 @@ namespace Song.Models.Album
         public int AlbumId { get; set; }
         public string AlbumName { get; set; }
 
-        [ForeignKey("Artist")]
         public int ArtistId { get; set; }
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }

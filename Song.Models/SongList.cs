@@ -13,9 +13,7 @@ namespace Song.Models
     {
         public int SongId { get; set; }
 
-        [ForeignKey("Artist")]
         public int ArtistId { get; set; }
-        public virtual Artist Artist { get; set; }
         public string SongName { get; set; }
 
         [Display(Name ="Created")]
